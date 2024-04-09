@@ -54,7 +54,8 @@ jobs:
           name: node-app
 
       - name: List directories
-        run: ls
+        run: ls /home/runner/work/onetime/onetime
+
 
       - name: Print working directory
         run: pwd
