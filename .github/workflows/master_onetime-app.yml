@@ -11,7 +11,7 @@ on:
 
 defaults:
   run:
-    working-directory: backend
+    working-directory: ./backend
 
 jobs:
   build:
@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'onetime-app'
           slot-name: 'Production'
-          package: .
+          package: backend
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2DE6C0FACBC04C698BAD0D4533182461 }}
