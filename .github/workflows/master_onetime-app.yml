@@ -53,8 +53,11 @@ jobs:
         with:
           name: node-app
 
-      - name: Change working directory to backend
-        run: cd backend
+      - name: List directories
+        run: ls
+
+      - name: Print working directory
+        run: pwd
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
